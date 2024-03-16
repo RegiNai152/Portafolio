@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+.contenedor{
+    width: 90%;
+    min-height: 200px;
+    background-image: url(../img/font.PNG);
+    background-color:to right bottom, aqua, wheat;
+    margin: 0 auto;
+}
+
+.cuadro{
+    display: flex;
+    margin: 20px;
+    border-bottom: 2px;
+    border-bottom-color: black;
+    padding: 10px;
+}
+
+.cuadroder{
+    float: right;
+    display: flex;
+    margin: 20px ;
+    border-left: 2px;
+    border-left-color: black;
+    padding: 10px;
+}
+
+.cuadroizq{
+    float: left;
+    display: flex;
+    margin: 20px ;
+    border-right: 2px;
+    border-right-color: black;
+    padding: 10px;
+}
+
+.cuadrotop{
+    float: top;
+    display: flex;
+    margin: 20px ;
+    border-bottom: 2px;
+    border-bottom-color: black;
+    padding: 10px;
+}
+
