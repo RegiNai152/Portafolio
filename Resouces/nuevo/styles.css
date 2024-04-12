@@ -1,0 +1,106 @@
+.contenedor {
+    width: 90%;
+    min-height: 200px;
+    background-color: rgba(255, 255, 255, 0.712);
+    padding: 20px;
+    margin: 0 auto;
+    transition: width 0.5s ease;
+}
+
+@media screen and (max-width: 768px){
+    .contenedor{
+        padding: 10px;
+    }
+    h1, p{
+        font-size: 14px;
+    }
+    .fila{
+        flex-direction: column;
+    }
+    .imagen, .info{
+        order: -1;
+    }
+}
+
+/*aqui va todas las funciones necesarias para hacer una tabla*/
+.conttabla {
+    background-color: #ffffff1c;
+    float: center;
+    margin-right: 20px;
+}
+.tabla {
+    margin: 0 auto;
+    border: 2px solid rgb(0, 208, 223);
+    padding: 10px;
+}
+.cuadro {/*cuadro suele usarse para cuando la tabla tenga una imagen y esta se ajuste a la tabla*/
+    flex: 1;
+    border: 1px solid rgb(108, 255, 223);
+    padding: 5px;
+}
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.columna {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid rgb(0, 208, 223);
+    margin-right: 10px;
+}
+.titulo {
+    background: black;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    padding: 5px;
+}
+.imagen {
+    text-align: center;
+    padding: 5px;
+}
+.info {
+    padding: 5px;
+}
+
+/*aqui van todas las funciones para el carrusel*/
+.carrusel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.galeria {
+    display: flex;
+     transition: transform 0.5s ease;
+    margin-bottom: 20px;
+}
+.imagenContenedor {
+    flex: 0 0 33.333%;
+            height: 200px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            margin: 0 10px;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+.arrowL{
+    left: 10px;
+}
+.arrowR{
+    right: 10px;
+}
+.arrow:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}

@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio</title>
+        <style id="style-custom">
+            body{
+                background-image: url(https://escueladeposgrado.edu.pe/wp-content/uploads/2020/11/Importancia-de-los-Sistema-de-Informacion-en-una-empresa-scaled.jpg);
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                font-family: Arial, sans-serif;
+                color: black;
+                background-color: white;
+            }
+            .contenedor{
+                background-color: rgba(255, 255, 255, 0.712);
+            }
+        </style>
+        <link rel="stylesheet" href="C:\Portafolio Trabajo\Resouces\nuevo\styles.css">
+    </head>
+    <body>
+        <div class="contenedor">
+            <div>
+                <label for="colorPicker">Color de fondo:</label>
+                <input type="color" id="colorPicker">
+                <label for="textColorPicker">Color del texto:</label>
+                <input type="color" id="textColorPicker">
+                <label for="fontSelector">Fuente:</label>
+                <select id="fontSelector">
+                    <option value="Arial, sans-serif">Arial</option>
+                    <option value="Verdana, sans-serif">Verdana</option>
+                    <option value="Calibri, sans-self">Calibri</option>
+                </select>
+            </div>
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
+            <h1 align="center">Ingeniero en Sistemas Computacionales</h1>
+            <hr style="color: #22222222;">
+            <p align="center">Bienvenido a mi portafolio, mi nombre es Daniel Regil Ramirez y estudio en Grupo ISIMA, aqui presento uno de mis trabajos en mi estancia en la universidad.</p>
+            <h2 align="center">Sobre Mi</h2>
+            <hr style="color: #22222222;">
+            <p align="center">Soy ingeniero en Sistemas computcinales, a pesar de ser la carrera que elegi por gusto, tengo otras pasiones secundarias a las cuales le he dedicado tiempo aparte de programar, suelo practicar dibujo incluyendo todo lo que tenga que ver con su respectiva teoria, tambien dedico a estudiar teoria de la musica asi como aprender a tocar diversos instrumentos y aprender a usar software de produccion musical, desarmo computadoras por pasatiempo, asi como hacer mantenimiento y armar equipos con componentes de dispositivos que sean obsoletos, se usar algunas herramientas de edicion de imagenes como krita, asi como usar algunos paquetes de adobe como photoshop o ilustrator</p>
+            <h1 align="center">Trabajos y Proyectos</h1>
+            <hr style="color: #22222222;">
+            <p align="center">aqu presento uno de mis cuantos trabajos y proyectos hechos en clase, desde algunos sencillos, hasta proyectos un poco mas complejos</p>
+            <div class="conttabla">
+                <div class="tabla">
+                    <div class="fila">
+                        <div class="cuadro">
+                            <div><p align="center">Circuitos Basicos (TinkerCad)</p></div>
+                            <div class="imagen"></div>
+                            <div class="info">Hechos en clase de electricidad y magnetismo</div>
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="columna">Descripcion</div>
+                        <div class="columna">Algunos ejercicios basicos en clase de electricidad y magnetismo, estos son trabajos que funcionan con arduino y que se pueden replicar en fisico si se sigue el diagrama que se muestran, solo es cuestion de conseguir los materiales necesarios. Se conforman por 3 trabajos, semaforo, servomotor y un display</div>
+                    </div>
+                    <div class="fila">
+                        <div class="columna">Links</div>
+                        <div class="columna">
+                            <ul>
+                                <li><span><a href="https://www.tinkercad.com/things/1FEdEIB9CdQ-semaforo?sharecode=B7dTT95kXr2vwb315ns5EAqdSPKlgqRsNBT_pVBEHzk">Semaforo</a></span></li>
+                                <li><span><a href="https://www.tinkercad.com/things/6YZMrxyxRCX-servomotor?sharecode=HtDzSeekQto440Yiksa1aUq9qVBGvP1kfVWNCTEv7Tc">Servomotor</a></span></li>
+                                <li><span><a href="https://www.tinkercad.com/things/a0RuxgL0Io3-display?sharecode=g29O5f2VtUzD32B7K-kQAORAYVo2IkhIU3whI12AGl8">Display</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: #22222222;">
+            <div class="conttabla">
+                <div class="tabla">
+                    <div class="fila">
+                        <div class="cuadro">
+                            <div><p align="center">Arcade</p></div>
+                            <div class="imagen"></div>
+                            <div class="info">Hecho en clase de Soporte Tecnico</div>
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="columna">Descripcion</div>
+                        <div class="columna">Una Arcade hecho con una mini laptop y un sistema operativo basado en linux llamado batocera</div>
+                    </div>
+                    <div class="fila">
+                        <div class="columna">Links</div>
+                        <div class="columna">Proximamente pero neta que hice el arcade xd</div>
+                    </div>
+                </div>
+            </div>
+            <h2 align="center">Contacto</h2>
+            <hr style="color: #22222222;">
+            <ul>
+                <li align="center">Email: daaregram@gmail.com</li>
+                <li align="center">Teléfono: 7121915850</li>
+                <li align="center">Redes Sociales:</li>
+                <li align="center"><p><a href="https://www.instagram.com/regi_naii/">Instagram</a></p></li>
+                <li align="center"><p><a href="https://www.facebook.com/dani.regil.5/">Facebook</a></p></li>
+            </ul>
+        </div>
+
+        <script>
+            let slider = document.querySelector('.slider');
+            let slides = document.querySelectorAll('.image-part');
+            let currentSlide = 0;
+        
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                updateSlidePosition();
+            }
+        
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                updateSlidePosition();
+            }
+        
+            function updateSlidePosition() {
+                let newPosition = -currentSlide * slides[0].offsetWidth;
+                slider.style.transform = `translateX(${newPosition}px)`;
+            }
+            document.addEventListener("DOMContentLoaded", function() {
+                const colorPicker = document.getElementById('colorPicker');
+                const textColorPicker = document.getElementById('textColorPicker');
+                const fontSelector = document.getElementById('fontSelector');
+                const contenedor = document.querySelector('.contenedor');
+    
+                // Manejador de eventos para el cambio de color de fondo
+                colorPicker.addEventListener('change', function() {
+                    contenedor.style.backgroundColor = colorPicker.value;
+                });
+    
+                // Manejador de eventos para el cambio de color de texto
+                textColorPicker.addEventListener('change', function() {
+                    contenedor.style.color = textColorPicker.value;
+                });
+    
+                // Manejador de eventos para el cambio de fuente
+                fontSelector.addEventListener('change', function() {
+                    contenedor.style.fontFamily = fontSelector.value;
+                });
+            });
+                    </script>
+
+    </body>
+</html>

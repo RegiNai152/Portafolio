@@ -1,0 +1,148 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            width: 100%;
+            height: 100%;
+            background-image: url(https://escueladeposgrado.edu.pe/wp-content/uploads/2020/11/Importancia-de-los-Sistema-de-Informacion-en-una-empresa-scaled.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .slider{
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .content {
+            width: 90%;
+            max-width: 1200px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .galery {
+            display: flex;
+            transition: transform 0.5s ease;
+            margin-bottom: 20px;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 50%;
+            z-index: 1;
+            transition: background-color 0.3s;
+        }
+        .image-part {
+            flex: 0 0 33.333%;
+            height: 200px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            margin: 0 10px;
+        }
+        .arrowL{
+            left: 10px;
+        }
+
+        .arrowR{
+            right: 10px;
+        }
+
+        .arrow:hover{
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+    </style>
+</head>
+<body>
+        <div class="contenedor">
+        <div class="content">
+            <h1>Mi Portafolio</h1>
+
+            <!-- Sección "Sobre Mí" -->
+            <div class="section about-me">
+                <h2>Ingeniero en Sistemas Computacionales</h2>
+                <p>Bienvenido a mi portafolio, mi nombre es Daniel Regil Ramirez y estudio en Grupo ISIMA, aqui presento uno de mis trabajos en mi estancia en la universidad.</p>
+                </div>
+
+            <div class="arrow arrowL" onclick="prevSlide()">&#10094;</div>
+
+            
+            <div class="slider">
+                <div class="image-part"><img src="C:\Portafolio Trabajo\Resouces\img\WhatsApp Image 2024-03-15 at 9.37.04 PM.jpeg" width="200" height="250"></div>
+                <div class="image-part"><img src="C:\Portafolio Trabajo\Resouces\img\papeleria programa.PNG" width="275" height="225"></div>
+            </div>
+
+            <div class="arrow arrowR" onclick="nextSlide()">&#10095;</div>
+            <br>
+            <br>
+
+            <div class="section">
+                <h2>Sobre Mi</h2>
+                <p>Soy ingeniero en Sistemas computcinales, a pesar de ser la carrera que elegi por mayor gusto, tengo otras pasiones secundarias a las cuales le he dedicado tiempo aparte de programar, suelo practicar dibujo incluyendo todo lo que tenga que ver con su respectiva teoria, tambien dedico a estudiar teoria de la musica asi como aprender a tocar diversos instrumentos y aprender a usar software de produccion musical, desarmo computadoras por diversion, asi como hacer mantenimiento y armar equipos con componentes de dispositivos que ya no lo requieran, actualmente busco reaunudar algunas actividades pero aun asi hay aun mas cosas que he llegado a hacer y que puedo llegar a hacer</p>
+            </div>
+
+            <div class="section">
+                <h2>Contacto</h2>
+                <p>Algunos de mis redes sociales</p>
+                <ul>
+                    <li>Email: daaregram@gmail.com</li>
+                    <li>Teléfono: 7121915850</li>
+                    <li>Redes Sociales:</li>
+                    <li><p><a href="https://www.instagram.com/regi_naii/">Instagram</a></p></li>
+                    <li><p><a href="https://www.facebook.com/dani.regil.5/">Facebook</a></p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let slider = document.querySelector('.slider');
+        let slides = document.querySelectorAll('.image-part');
+        let currentSlide = 0;
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateSlidePosition();
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlidePosition();
+        }
+
+        function updateSlidePosition() {
+            let newPosition = -currentSlide * slides[0].offsetWidth;
+            slider.style.transform = `translateX(${newPosition}px)`;
+        }
+    </script>
+
+</body>
+</html>
